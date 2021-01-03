@@ -1,0 +1,55 @@
+{
+  "Format": "1.19.0",
+  "ConfigSchema": {
+    "Cow": { "AllowValues": "New, Old, False", "Default": "New" },
+    "Goat": { "AllowValues": "New, Old, False", "Default": "New" },
+    "Pig": { "AllowValues": "New, Old, False", "Default": "New" },
+    "Sheep": { "AllowValues": "New, Old, False", "Default": "New" }
+  },
+  "Changes": [
+    {
+      "Action": "EditImage",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/Cow {{Cow}}.png",
+      "FromArea": { "X": 0, "Y": 0, "Width": 32, "Height": 16 },
+      "ToArea": { "X": 32, "Y": 448, "Width": 32, "Height": 16 },
+      "PatchMode": "Replace",
+      "When": {
+        "Cow": "New, Old"
+      }
+    },
+    {
+      "Action": "EditImage",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/Goat {{Goat}}.png",
+      "FromArea": { "X": 0, "Y": 0, "Width": 32, "Height": 16 },
+      "ToArea": { "X": 64, "Y": 448, "Width": 32, "Height": 16 },
+      "PatchMode": "Replace",
+      "When": {
+        "Goat": "New, Old"
+      }
+    },
+    {
+      "Action": "EditImage",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/Pig {{Pig}}.png",
+      "FromArea": { "X": 0, "Y": 0, "Width": 32, "Height": 16 },
+      "ToArea": { "X": 0, "Y": 480, "Width": 32, "Height": 16 },
+      "PatchMode": "Replace",
+      "When": {
+        "Pig": "New, Old"
+      }
+    },
+    {
+      "Action": "EditImage",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/Sheep {{Sheep}}.png",
+      "FromArea": { "X": 0, "Y": 0, "Width": 32, "Height": 16 },
+      "ToArea": { "X": 32, "Y": 464, "Width": 32, "Height": 16 },
+      "PatchMode": "Replace",
+      "When": {
+        "Sheep": "New, Old"
+      }
+    }
+  ]
+}
